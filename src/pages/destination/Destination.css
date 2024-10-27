@@ -1,0 +1,124 @@
+.topdestcont {
+  position: relative;
+}
+.destname {
+  position: absolute;
+  color: #fff;
+  font-weight: 500;
+  font-size: 2.5rem;
+  left: 5%;
+  bottom: 10%;
+  text-shadow: 2px 2px black;
+}
+.destname img {
+  width: 6rem;
+  height: auto;
+}
+
+.bigbannerimg {
+  width: 100%;
+  border-radius: 0.4rem;
+}
+.Skeletonsize {
+  width: 100%;
+  aspect-ratio: 4.5875 / 1;
+}
+.destcontentcont {
+  padding: 2rem;
+}
+.destmainheading {
+  font-size: 2.5rem;
+  padding: 1rem 0rem;
+  color: var(--org-primary);
+  font-weight: 600;
+}
+.destheading {
+  font-size: 2rem;
+  padding: 1rem 0rem;
+  color: var(--org-primary);
+  font-weight: 600;
+}
+.destsubdata {
+  font-size: 1.6rem;
+  color: var(--medium-gray);
+  transition: all 0.3s ease-in-out;
+}
+.destrow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.destleft {
+  width: 70%;
+}
+.destleftnerrow {
+  width: 65%;
+}
+.destright {
+  width: 25%;
+}
+.destrightwide {
+  width: 30%;
+}
+.destsideimg {
+  width: 100%;
+}
+.destsubdata span {
+  color: var(--org-primary);
+  font-weight: 600;
+}
+.uniscont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0.4rem;
+  background-color: #fff;
+}
+.uniself {
+  background-color: #fff;
+  border-radius: 0.4rem;
+  border: 0.1rem solid #f1f1f1;
+  width: calc(10% - 0.8rem);
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 auto;
+  margin: 0.4rem;
+  overflow: hidden;
+}
+.uniself:hover {
+  z-index: 10;
+  transform: scale(1.02);
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.12);
+}
+.uniimg {
+  width: 100%;
+  height: auto;
+  border-radius: 0.4rem;
+  display: block;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* ***************************************
+**************Responsiveness***********
+*************************************** */
+@media (max-width: 450px) {
+  .destrowone {
+    flex-direction: column-reverse;
+  }
+  .destrowtwo {
+    flex-direction: column;
+  }
+  .destleft,
+  .destleftnerrow {
+    width: 100%;
+  }
+  .destright,
+  .destrightwide {
+    width: 60%;
+  }
+  .uniself {
+    width: calc(20% - 0.8rem);
+  }
+}

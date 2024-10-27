@@ -1,0 +1,43 @@
+.navaboveside {
+  display: none;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 0.4rem;
+  padding: 1rem 2rem;
+}
+
+/* ***************************************
+**************Responsiveness***********
+*************************************** */
+
+@media (max-width: 700px) {
+  .navaboveside {
+    display: block;
+  }
+  .manageaccont {
+    flex-direction: column;
+  }
+  .manageaccont {
+    gap: 0.5rem;
+  }
+  .manageacul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+  .manageacli {
+    font-size: 1.4rem;
+  }
+  .navaboveside {
+    padding: 0.5rem;
+  }
+  .navrightside {
+    min-height: 40rem;
+  }
+  .adminspan,
+  .logoutspan {
+    display: none;
+  }
+}

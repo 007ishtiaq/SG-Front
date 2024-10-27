@@ -1,0 +1,139 @@
+.mainteamcont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 2rem;
+}
+.mainteamheading {
+  margin-top: 4rem;
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--org-primary);
+}
+.mainteamcont p {
+  text-align: center;
+  margin: 1rem 0;
+  width: 90%;
+}
+.teamcol {
+  width: 20%;
+}
+.teamcol.teamcolmain {
+  width: 25%;
+}
+.teamrow {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.team-col {
+  flex-basis: 20%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.team-col img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.teamdetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.teamdetails p {
+  margin: 0;
+}
+.teamdesi {
+  color: var(--org-primary);
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.teamname {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.teammaincont {
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 100%;
+}
+.teammainrow {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 5rem;
+}
+.teamstatement {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 50%;
+}
+.teamstatement span {
+  color: var(--org-primary);
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+/*****************************************
+**************Responsiveness***********
+*************************************** */
+
+@media (max-width: 450px) {
+  .aboutcont {
+    padding: 0rem 1rem;
+  }
+  .mainteamcont {
+    padding: 1rem;
+  }
+  .visiontextside p {
+    font-size: 1.2rem;
+  }
+  .mainteamcont > p {
+    font-size: 1.4rem;
+  }
+  .teamcol.teamcolmain {
+    width: 45%;
+  }
+  .teammainrow {
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .teamstatement {
+    width: 100%;
+  }
+  .teamstatement p {
+    text-align: center;
+    align-self: center;
+  }
+  .teamrow {
+    margin-top: 1%;
+    gap: 2rem;
+  }
+  .teamcol {
+    width: 30%;
+  }
+  .teammainrowtwo {
+    margin: 5rem 0 0rem;
+  }
+  .teamrow {
+    margin: 1rem 0rem;
+  }
+  .teamcol {
+    margin: 0 1rem;
+  }
+}

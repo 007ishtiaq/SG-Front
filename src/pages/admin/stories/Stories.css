@@ -1,0 +1,38 @@
+.submitcont {
+  display: flex;
+  align-items: center;
+}
+.storybtn {
+  margin-left: 2rem;
+  height: 3rem;
+}
+
+/* copied style from success stories */
+.storiescontadmin {
+  display: flex;
+  /* flex-direction: column; */
+  padding: 0;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.storyadmin {
+  margin: 1rem 0;
+  width: 18rem;
+  height: auto;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  transition: 0.3s ease;
+  border: 2px solid #b9b9b9;
+}
+.storyadmin img {
+  /* height: 85%; */
+}
+.storyadmin:hover {
+  border: 2px solid #080808;
+}
+.btn.btn-sm.storyremovebtn {
+  width: 100%;
+  font-size: 1.3rem;
+  margin: 0;
+}

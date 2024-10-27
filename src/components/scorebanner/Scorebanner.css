@@ -1,0 +1,84 @@
+.contentcont.scorecardcontainer {
+  padding: 0;
+}
+.scorecardcont {
+  display: flex;
+}
+.scorecardleft {
+  width: 62%;
+  padding: 2rem;
+  background-color: #231f20;
+  color: white;
+}
+.scorecardright {
+  width: 38%;
+  position: relative;
+  background-color: #231f20;
+}
+.cornerstyle {
+  position: absolute;
+  left: -14rem;
+}
+.scorecardright img {
+  width: 100%;
+  height: 100%;
+}
+.scorecontent {
+  width: 67%;
+  margin: 2rem;
+}
+.actionbtncont {
+  width: 12rem;
+  margin: 1.5rem 0;
+}
+.scoreheading {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+.scoreheading span {
+  color: #2782eb;
+  font-size: 2.5;
+  font-weight: 600;
+}
+.scoresub {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.scorecont {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 95%;
+  margin: 1rem 0;
+}
+.scorecircle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+.scoreself {
+  font-size: 2.2rem;
+  padding: 1rem;
+  border: 1px solid white;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+.scoretxt {
+  font-size: 1.5rem;
+}
+
+/* ***************************************
+**************Responsiveness***********
+*************************************** */
+@media (max-width: 450px) {
+  .scorecardcont {
+    flex-direction: column-reverse;
+  }
+  .scorecardleft,
+  .scorecardright {
+    width: 100%;
+  }
+}

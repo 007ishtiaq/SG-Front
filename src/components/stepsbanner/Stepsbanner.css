@@ -1,0 +1,124 @@
+.stepscont {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 1rem 3rem 3rem;
+}
+.stepheadingcont {
+  font-size: 2rem;
+  padding: 1rem 2.5rem;
+  color: var(--org-primary);
+  font-weight: 600;
+}
+.stepself {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.24);
+  padding: 3rem 4rem;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  gap: 1rem;
+  user-select: none;
+}
+.svgcont {
+  display: flex;
+  justify-content: space-between;
+}
+.stepself svg {
+  width: 8rem;
+  height: auto;
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+.stepself .unisvg {
+  width: 9.2rem;
+}
+.contcount {
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 50%;
+  padding: 2rem;
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.contcount h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  color: rgb(207, 207, 207);
+  margin: 0;
+  font-family: Bebas Neue, sans-serif;
+  -webkit-text-stroke: 1px #2828281f;
+  transition: all 0.3s ease-in-out;
+}
+.stepself .heading {
+  font-size: 2rem;
+  /* color: var(--org-primary); */
+  color: black;
+  font-weight: 400;
+  margin-top: 0.8rem;
+  margin-bottom: 0.4rem;
+  transition: all 0.3s ease-in-out;
+}
+.stepself .detailscont {
+  font-size: 1.6rem;
+  color: var(--medium-gray);
+  transition: all 0.3s ease-in-out;
+}
+
+/* ----hover effect---- */
+.aqua:hover {
+  background-color: rgb(0, 206, 206);
+  transform: scale(1.02);
+}
+.orange:hover {
+  background-color: #fd6a12;
+  transform: scale(1.02);
+}
+.green:hover {
+  background-color: #13df00;
+  transform: scale(1.02);
+}
+.pink:hover {
+  background-color: #f1137b;
+  transform: scale(1.02);
+}
+.blue:hover {
+  background-color: #780fda;
+  transform: scale(1.02);
+}
+.lightblue:hover {
+  background-color: #189ffd;
+  transform: scale(1.02);
+}
+.stepself:hover svg {
+  fill: white;
+}
+.stepself:hover .contcount {
+  border-color: white;
+}
+.stepself:hover .contcount h1 {
+  color: white;
+}
+.stepself:hover .heading {
+  color: white;
+}
+.stepself:hover .detailscont {
+  color: white;
+}
+
+/* ***************************************
+**************Responsiveness***********
+*************************************** */
+@media (max-width: 450px) {
+  .stepscont {
+    grid-gap: 1rem;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+  }
+}

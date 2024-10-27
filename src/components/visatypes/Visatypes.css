@@ -1,0 +1,59 @@
+.vtypescont {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 1rem 3rem 3rem;
+}
+.vtypesheadingcont {
+  font-size: 2rem;
+  padding: 1rem 2.5rem;
+  color: var(--org-primary);
+  font-weight: 600;
+}
+.vtypesself {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.24);
+  padding: 2rem 3rem;
+  text-align: center;
+  border-radius: 10px;
+  border-bottom: 4px solid #1456a3;
+  border-top: 4px solid #1456a3;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* gap: 1rem; */
+  margin: 1rem 0;
+}
+.vtypesself svg {
+  width: 8rem;
+  height: auto;
+  display: block;
+}
+.vtypesself .touristsvg svg {
+  width: 9rem;
+  height: auto;
+  display: block;
+}
+.vtypesself .heading {
+  font-size: 2rem;
+  color: var(--org-primary);
+  font-weight: 400;
+}
+.vtypesself .detailscont {
+  font-size: 1.6rem;
+  color: var(--dark-gray);
+}
+/* ***************************************
+**************Responsiveness***********
+*************************************** */
+@media (max-width: 450px) {
+  .vtypescont {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+  }
+  .partnercont {
+    padding: 1rem 2rem;
+  }
+}

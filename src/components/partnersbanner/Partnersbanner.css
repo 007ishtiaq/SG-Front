@@ -1,0 +1,154 @@
+.partnercont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+}
+.partnerright {
+  padding: 1rem;
+  max-width: 35%;
+}
+.partnerright > div {
+  margin-bottom: 1rem;
+}
+.partnerright > button {
+  margin-top: 1rem;
+}
+.partnerright .aboveheading {
+  font-size: 1.7rem;
+  color: var(--org-primary);
+  font-weight: 400;
+}
+.partnerright .heading {
+  font-size: 2rem;
+  color: black;
+  font-weight: 600;
+}
+.partnerright .subdata {
+  font-size: 1.5rem;
+  color: var(--dark-gray);
+}
+.partnerright .actionbtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 12px;
+  border: 2px solid rgba(67, 86, 255, 0.1);
+  border-radius: 22px;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #2269b5;
+  font-weight: 400;
+  text-decoration: none;
+}
+.partnerleft {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+.partnerleft .bennerself {
+  border: 2px solid transparent;
+  border-radius: 6px;
+  border: 1px solid #d3d3d34d;
+  box-shadow: 0 0 24px 5px rgba(0, 0, 0, 0.05);
+  width: calc(100% / 4);
+  min-height: 8rem;
+  cursor: pointer;
+}
+.partnerleft .bennerself:hover {
+  border: 1px solid #e5e7eb;
+  box-shadow: 0;
+}
+.uniimages {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* -----css for carousal---- */
+/* Partnersbanner.css */
+
+.partnerleft {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-container {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-images {
+  display: flex;
+  width: 400%; /* 4 items at a time, so 400% */
+}
+
+.carousel-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.carousel-btn.left {
+  left: 0;
+}
+
+.carousel-btn.right {
+  right: 0;
+}
+
+.bennerself {
+  min-width: 25%; /* 100% / 4 items */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.uniimages {
+  width: 100%;
+  max-width: 150px; /* Adjust as needed */
+}
+
+.image-container {
+  overflow: hidden;
+  width: 100%; /* Adjust as needed */
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease;
+  position: relative;
+  left: 0;
+}
+
+.carousel-images > div {
+  flex: 0 0 25%; /* Adjust as needed */
+}
+
+.carousel-images img {
+  width: 100%; /* Adjust as needed */
+  display: block;
+}
+
+/* ***************************************
+**************Responsiveness***********
+*************************************** */
+@media (max-width: 450px) {
+  .partnercont {
+    flex-direction: column;
+  }
+  .partnerright {
+    max-width: 100%;
+  }
+}
