@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Sliderdiv from "../components/SliderDiv/Sliderdiv";
-import MegaBanner from "../components/megabanner/MegaBanner";
 import { Online } from "react-detect-offline";
 import { getRelatedBanners } from "../functions/banner";
 import Countriesbanner from "../components/countriesbanner/Countriesbanner";
@@ -9,6 +7,7 @@ import Visatypes from "../components/visatypes/Visatypes";
 import Reviewsbox from "../components/reviewsbox/Reviewsbox";
 import Scorebanner from "../components/scorebanner/Scorebanner";
 import Stepsbanner from "../components/stepsbanner/Stepsbanner";
+import MegaSlide from "../components/megaslide/MegaSlide";
 
 const Home = () => {
   // const [banners, setBanners] = useState([]);
@@ -35,9 +34,8 @@ const Home = () => {
 
   return (
     <>
-      <Sliderdiv />
+      <MegaSlide />
       <div className="centercont">
-        {/* <MegaBanner loading={loading} banner={banners[0]} /> */}
         <Partnersbanner />
         <Scorebanner />
         <Visatypes />
