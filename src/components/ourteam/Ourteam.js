@@ -4,6 +4,7 @@ import person1 from "../../images/team/1.webp";
 import person2 from "../../images/team/2.webp";
 import person3 from "../../images/team/3.webp";
 import person4 from "../../images/team/4.webp";
+import person5 from "../../images/team/5.webp";
 import person6 from "../../images/team/6.webp";
 import person7 from "../../images/team/7.png";
 import visionimg from "../../images/vision/visionimg.webp";
@@ -81,6 +82,32 @@ export default function Ourteam() {
                   detail is meticulously managed for a compelling application.
                   As the CEO of Study Guide International, I am dedicated to
                   your success. Let us help turn your dreams into reality.
+                </p>
+              </div>
+            </div>
+            <div className="teammainrow teammainrowtwo">
+              <div className="teamcol teamcolmain">
+                <div class="team-col">
+                  <img src={person5} alt="" />
+                </div>
+                <div className="teamdetails">
+                  <p className="teamdesi">Customer Support Supervisor</p>
+                  <p className="teamname">Ms Amna Burhan</p>
+                </div>
+              </div>
+              <div className="teamstatement">
+                <span>Customer Support Supervisor:</span>
+                <p>
+                  Amna Burhan served as a Customer Support Supervisor, leading a
+                  team that included Sir Raees, Miss Tanzeel, Miss Muqdas, and
+                  Miss Kainat. She was responsible for ensuring high quality
+                  customer service, training and monitoring her team, and
+                  handling escalated issues efficiently. In addition to
+                  supervising her team, she managed interactions with sub-agents
+                  and their students, ensuring smooth communication and issue
+                  resolution. Her role also involved performance tracking,
+                  reporting, and collaborating with other departments to enhance
+                  customer satisfaction.
                 </p>
               </div>
             </div>
